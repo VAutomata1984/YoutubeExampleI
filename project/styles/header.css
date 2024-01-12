@@ -1,0 +1,167 @@
+.header{
+  height: 55px;
+
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(228,228,228) ;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100; /* header will appear above*/
+
+} 
+
+.left-section{
+  display: flex;
+  align-items: center;
+}
+
+.mid-section{
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 30px; 
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.ham-menu{
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.logo{
+  height:20px;
+}
+
+.search-bar{
+  flex: 1; 
+  height: 36px; 
+  padding-left: 10px;
+  font-size: 16px;
+  
+  /*border same as: width, style, color */
+  border: 1px solid rgb(192,192,192);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+  width: 0; /* To shrink (flex) */
+}
+
+.search-bar::placeholder{
+  font-size: 16px;
+}
+
+.search-icon{
+  height:25px;
+}
+
+.search-s{
+  height: 40px; 
+  width: 66px;
+  background-color: rgb(240,240,240);
+  border-width: 1px;
+  border-style: solid;
+  border-color:rgb(192,192,192);
+  margin-left: -1px; 
+  margin-right: 10px;
+}
+
+.search-s .tooltip, .voice-s .tooltip, .upload-icon-container .tooltip{
+  position: absolute;
+  background-color: gray;
+  color: white;
+
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 12px;
+
+  border-radius: 2px;
+  font-size: 12px;
+
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-s:hover .tooltip, .voice-s:hover .tooltip, .upload-icon-container:hover .tooltip{
+  opacity: 1;
+}
+
+.search-s, .voice-s, .upload-icon-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.voice-s{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(245,245,245);
+}
+
+.voice-icon{
+  height:24px;
+  margin-top: 4px;
+}
+
+.right-section{
+  display: flex;
+  align-items: center;
+  width: 150px;
+  justify-content: space-between;
+  margin-right: 24px;
+  flex-shrink: 0; /* To not shrink (flex) */
+}
+
+.upload-icon{
+  height: 24px;
+}
+
+.notifs-icon{
+  height: 24px;
+}
+
+.notifs-icon-container{
+   position: relative;
+}
+
+.notifs-count{
+  position: absolute;
+  top: -2px;
+  right: -5px; 
+  background-color: red;
+  color: white;
+
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+
+}
+
+.my-channel-icon {
+  height: 32px;
+  width: 32px;
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: top;
+}
+
+

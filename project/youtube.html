@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Youtube.com Clone</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+
+    <meta charset="UTF-8"> 
+  </head>
+
+  <body>
+    <header class="header"> 
+      <div class="left-section"> 
+        <img class="ham-menu" src="icons/hamburger-menu.svg"> 
+        <img class="logo" src="icons/youtube-logo.svg"> 
+        
+      </div>
+      <div class="mid-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-s">
+          <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-s">
+          <img class="voice-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container"> 
+          <img class="upload-icon" src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="notifs-icon-container"> 
+          <img class="notifs-icon" src="icons/notifications.svg">
+          <div class="notifs-count">3</div>
+        </div>
+        <img class="my-channel-icon" src="icons/me.png">
+      </div>
+    </header>
+
+    <nav class="sidebar"> 
+      <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/shorts.svg">
+        <div>Shorts</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main> 
+      <section class="video-grid">
+        <div class="video-preview ">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=l8wWoQ3_F00&t=88s&ab_channel=VICEAsia"> 
+              <img class="thumbnail" src="thumbnails/996.webp">
+            </a>  
+            <div class="video-time ">16:42</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <img class="profile-pic" src="channel-id/viceasia.jpg"> 
+            </div>
+            <div class="vid-info">
+              <p class="video-title">The Extreme 996 Work Culture In China</p>
+              <p class="video-author"> Vice Asia</p>
+              <p class="video-stats"> 7.1M Views &#x2022; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=jNuRpYaPLuA&ab_channel=CityBeautiful">
+              <img class="thumbnail" src="thumbnails/suburb.webp">
+            </a>  
+            <div class="video-time ">17:11</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <img class="profile-pic" src="channel-id/channels4_profile.jpg"> 
+            </div>
+            <div class="vid-info">
+              <p class="video-title">Can we fix the suburbs?</p>
+              <p class="video-author"> City Beautiful</p>
+              <p class="video-stats"> 275K Views &#x2022; 2 months ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=sVKQn2I4HDM&ab_channel=TwoCents">
+              <img class="thumbnail" src="thumbnails/2cents.webp">  
+            </a>
+            <div class="video-time ">5:13</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <img class="profile-pic" src="channel-id/2c.jpg"> 
+            </div>
+            <div class="vid-info">
+              <p class="video-title">Budgeting Basics!</p>
+              <p class="video-author"> Two Cents</p>
+              <p class="video-stats"> 793K Views &#x2022; 4 years ago</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=EVwUjQzcUBc&ab_channel=TVLand"> 
+              <img class="thumbnail" src="thumbnails/gg.webp">
+            </a>
+            <div class="video-time ">5:15</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <img class="profile-pic" src="channel-id/tvland.jpg"> 
+            </div>
+            <div class="vid-info">
+              <p class="video-title"> Date Night in Miami 💋 The Golden Girls&apos; Best Dates (Compilation) | TV Land </p>
+              <p class="video-author"> TV Land</p>
+              <p class="video-stats"> 148K Views &#x2022; 3 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=KuXjwB4LzSA&t=1224s&pp=ygUVd2hhdCBpcyBhIGNvbnZvbHV0aW9u">
+              <img class="thumbnail" src="thumbnails/convolution.jpg">  
+            </a>
+            <div class="video-time ">23:01</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <img class="profile-pic" src="channel-id/3blue.jpg"> 
+            </div>
+            <div class="vid-info">
+              <p class="video-title">But what is a convolution?</p>
+              <p class="video-author"> 3Blue1Brown </p>
+              <p class="video-stats"> 1.8M Views &#x2022; 8 months ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=zNYK7rnXi9g&pp=ygUMdGliZWVzIHNpYmlz"> 
+              <img class="thumbnail" src="thumbnails/sidis.jpg">  
+            </a>    
+            <div class="video-time ">18:14</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <img class="profile-pic" src="channel-id/tibees.jpg"> 
+            </div>
+            <div class="vid-info">
+              <p class="video-title"> World's smartest person wrote this one mysterious book </p>
+              <p class="video-author"> Tibees</p>
+              <p class="video-stats"> 1.8M Views &#x2022; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=YAKcbvioxFk&t=1s&pp=ygUPc2hvdyBkb24ndCB0ZWxs"> 
+              <img class="thumbnail" src="thumbnails/show.webp"> 
+            </a>
+            <div class="video-time ">27:18</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <img class="profile-pic" src="channel-id/dcallahan.jpg"> 
+            </div>
+            <div class="vid-info">
+              <p class="video-title"> How to Show, Not Tell: The Complete Writing Guide </p>
+              <p class="video-author"> Diane Callahan - Quotidian Writer</p>
+              <p class="video-stats"> 2.6M Views &#x2022; 2 years ago</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=i1jkj1l-mlM&t=878s&pp=ygUUZXZhbmdlbGlvbiBiZWV0aG92ZW4%3D">
+              <img class="thumbnail" src="thumbnails/eva_9.jpg"> 
+            </a> 
+            <div class="video-time ">23:08</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <img class="profile-pic" src="channel-id/eva.jpg"> 
+            </div>
+            <div class="vid-info">
+              <p class="video-title">  Evangelion - Rahbari - Beethoven's 9th Symphony 4th Movement "Ode to Joy" </p>
+              <p class="video-author"> TheSchumuck2</p>
+              <p class="video-stats"> 2.9M Views &#x2022; 11 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=EhC9spSh5J4&list=WL&index=10&t=415s&ab_channel=PlumVillage"> 
+              <img class="thumbnail" src="thumbnails/habits.jpg">
+            </a>
+            <div class="video-time ">1:56:42</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <img class="profile-pic" src="channel-id/plum.jpg"> 
+            </div>
+            <div class="vid-info">
+              <p class="video-title"> Ending the Vicious Circle of Negative Habits | Dharma Talk by Thich Nhat Hanh, 2004.03.25 </p>
+              <p class="video-author"> Plum Village</p>
+              <p class="video-stats"> 1M Views &#x2022; 5 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=ba-HMvDn_vU&t=1s&pp=ygUJTUlUIEJyYWlu">
+              <img class="thumbnail" src="thumbnails/brain.jpg"> 
+            </a>
+            <div class="video-time ">1:19:56</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <img class="profile-pic" src="channel-id/MIT.jpg"> 
+            </div>
+            <div class="vid-info">
+              <p class="video-title"> 1. Introduction to the Human Brain </p>
+              <p class="video-author"> MIT OpenCourseWare</p>
+              <p class="video-stats"> 10M Views &#x2022; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=5SWEyBoWeWY&t=1s&pp=ygUhY3Jhd2ZvcmQgYWR2aWNlIHRvIHlvdW5nIGFjYWRlbWlz"> 
+              <img class="thumbnail" src="thumbnails/cowboy.jpg">  
+            </a>
+            <div class="video-time ">28:53</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <img class="profile-pic" src="channel-id/jack.jpg"> 
+            </div>
+            <div class="vid-info">
+              <p class="video-title"> Advice to Young Academics </p>
+              <p class="video-author"> Jackson Crawford</p>
+              <p class="video-stats"> 15K Views &#x2022; 10 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=0QEbwNLQvqc&t=147s&pp=ygUOa2FtZW4gcmlkZXIgejA%3D"> 
+              <img class="thumbnail" src="thumbnails/krzo.webp">
+            </a>
+            <div class="video-time ">48:06</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <img class="profile-pic" src="channel-id/toei.jpg"> 
+            </div>
+            <div class="vid-info">
+              <p class="video-title">Kamen Rider ZO</p>
+              <p class="video-author"> TOEI TOKUSATSU WORLD OFFICIAL</p>
+              <p class="video-stats"> 510K Views &#x2022; 2 years ago</p>
+            </div>
+          </div>
+        </div>
+
+
+  
+      </section>
+
+
+    </main>
+    
+    
+
+    
+
+    
+  </body>
+</html>

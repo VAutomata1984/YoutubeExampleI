@@ -1,0 +1,35 @@
+.sidebar{
+  position: fixed; /* not on page anymore*/
+  left: 0;
+  bottom: 0; 
+  top: 55px;
+  background-color: white;
+  width: 80px; 
+  z-index: 200;
+  padding-top: 5px;
+}
+
+.sidebar-link{
+  height: 74px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* now verical dir*/
+  align-items: center; /* now horizontal dir */
+  cursor: pointer;
+}
+
+
+.sidebar-link:hover{
+  background-color: rgb(235,235,235);
+}
+
+/* we are targeting all imgs in sidebar link, with space*/
+.sidebar-link img{
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.sidebar-link div{
+  font-family: Roboto,Arial;
+  font-size: 10px;
+}
